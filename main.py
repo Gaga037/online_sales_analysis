@@ -1,5 +1,6 @@
 from product import Product
 from product_manager import ProductManager
+from cart import Cart
 
 manager = ProductManager()
 
@@ -14,3 +15,16 @@ manager.add_product(p3)
 #proizvod i ukupna vrednost
 manager.display_products()
 print("Ukukpna vrednost inventara:", manager.total_inventory_value())
+
+
+
+cart = Cart()
+
+#dodavanje proizvoda u korpu
+cart.add_to_cart(p1)
+cart.add_to_cart(p2)
+cart.add_to_cart(p3)
+
+#sadrzaj korpe i ukupne vrednosti
+cart.display_cart()
+print("Total cart value:", cart.calculate_total())
