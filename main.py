@@ -13,4 +13,4 @@ manager.add_product(p3)
 
 #proizvod i ukupna vrednost
 manager.display_products()
-print("Total inventory value:", manager.total_inventory_value())
+print("Ukukpna vrednost inventara:", manager.total_inventory_value())
